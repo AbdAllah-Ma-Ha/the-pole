@@ -11,6 +11,9 @@
     <!-- مكتبة الأيقونات (FontAwesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- مكتبة الحركات (AOS Animation Library) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- الخط العربي -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
@@ -21,7 +24,7 @@
         <div class="container header-container">
             
            <a href="#" class="logo">
-                <!-- صورة اللوقو (استبدلها بصورتك الحقيقية لاحقاً) -->
+                <!-- اللوقو -->
                 <img src="./99.png" alt="شعار">
                 <span class="brand-name">القطب الشمالي</span>
             </a>
@@ -37,7 +40,7 @@
                 </ul>
             </nav>
 
-            <!-- زر الموبايل (الهامبرغر) -->
+            <!-- زر الموبايل -->
             <div class="hamburger" id="hamburger-btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -58,7 +61,8 @@
     <!-- 1. الرئيسية (Hero) -->
     <section id="hero" class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
+        <!-- حركة: ظهور للأعلى (fade-up) -->
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
             <span class="badge">تأسست سنة 2019</span>
             <h1>شريكك الأول في <br> <span class="highlight">المواد الكهربائية</span></h1>
             <p>نقدم أجود أنواع المعدات الكهربائية وقطع الغيار الصناعية للسوق الليبي بأعلى المواصفات العالمية.</p>
@@ -72,11 +76,12 @@
     <!-- 2. من نحن -->
     <section id="about" class="section">
         <div class="container about-wrapper">
-            <div class="about-img">
-                <!-- ضع صورتك هنا في مجلد assets/images -->
+            <!-- الصورة تأتي من اليسار -->
+            <div class="about-img" data-aos="fade-left" data-aos-duration="1000">
                 <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" alt="مخازن الشركة">
             </div>
-            <div class="about-text">
+            <!-- النص يأتي من اليمين -->
+            <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
                 <h4 class="sub-title">من نحن</h4>
                 <h2>الريادة في التوريد والخدمات اللوجستية</h2>
                 <p>تعتبر شركة القطب الشمالي (تأسست 2019) إحدى الشركات الرائدة في ليبيا في مجال استيراد وتوزيع المواد الكهربائية وقطع غيار المصانع.</p>
@@ -98,22 +103,23 @@
     <!-- 3. قسم الخدمات (Services) -->
     <section id="services" class="section bg-light">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>خدماتنا</h2>
                 <p>حلول متكاملة لقطاع الأعمال والصناعة</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <!-- الكروت تظهر بتكبير (Zoom-in) مع تأخير زمني لتظهر بالتتابع -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
                     <i class="fa-solid fa-ship"></i>
                     <h3>الاستيراد والشحن</h3>
                     <p>نؤمن لكم البضائع من المصنع مباشرة إلى مخازنكم في ليبيا.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
                     <i class="fa-solid fa-handshake"></i>
                     <h3>عقود التوريد</h3>
                     <p>عقود طويلة الأمد لتوريد قطع الغيار للمصانع والورش.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
                     <i class="fa-solid fa-headset"></i>
                     <h3>استشارات فنية</h3>
                     <p>فريق هندسي جاهز لمساعدتكم في اختيار القطع المناسبة.</p>
@@ -122,17 +128,17 @@
         </div>
     </section>
 
-    <!-- 4. قسم المنتجات (Products) - الشكل الاحترافي -->
+    <!-- 4. قسم المنتجات -->
     <section id="products" class="section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>أحدث المنتجات</h2>
                 <p>تشكيلة واسعة من المعدات الأصلية</p>
             </div>
             
             <div class="products-grid">
-                <!-- منتج 1 -->
-                <div class="product-item">
+                <!-- المنتجات تظهر من الأسفل -->
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-image">
                         <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=500&q=80" alt="منتج">
                     </div>
@@ -143,8 +149,7 @@
                     </div>
                 </div>
 
-                <!-- منتج 2 -->
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="p-image">
                         <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&q=80" alt="منتج">
                     </div>
@@ -155,8 +160,7 @@
                     </div>
                 </div>
 
-                <!-- منتج 3 -->
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="p-image">
                         <img src="https://plus.unsplash.com/premium_photo-1664302152996-22998a135384?w=500&q=80" alt="منتج">
                     </div>
@@ -170,7 +174,7 @@
         </div>
     </section>
 
-    <!-- 5. تواصل معنا (التصميم الجديد - بدون فورم) -->
+    <!-- 5. تواصل معنا -->
     <section id="contact" class="section bg-dark">
         <div class="container">
             <div class="section-header text-white" data-aos="fade-down">
@@ -180,7 +184,7 @@
 
             <!-- كروت التواصل -->
             <div class="contact-cards-container">
-                <!-- كرت الهاتف -->
+                <!-- كرت الهاتف (حركة دوران Flip) -->
                 <div class="c-card-item" data-aos="flip-left" data-aos-delay="100">
                     <div class="icon-circle">
                         <i class="fa-solid fa-phone-volume"></i>
@@ -212,7 +216,7 @@
             </div>
             
             <!-- زر واتساب عائم كبير -->
-            <div class="whatsapp-action" data-aos="fade-up" data-aos-delay="400">
+            <div class="whatsapp-action" data-aos="zoom-in-up" data-aos-delay="400">
                 <a href="https://wa.me/218910000000" target="_blank" class="btn btn-whatsapp">
                     <i class="fa-brands fa-whatsapp"></i> تواصل معنا عبر واتساب
                 </a>
@@ -238,5 +242,15 @@
 
     <!-- ربط ملف الجافاسكريبت -->
     <script src="script.js"></script>
+    
+    <!-- تفعيل مكتبة الحركات -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, /* الحركة تحدث مرة واحدة فقط عند النزول */
+        offset: 100 /* يبدأ التحريك قبل العنصر بـ 100 بيكسل */
+      });
+    </script>
 </body>
 </html>
+
