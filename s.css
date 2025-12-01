@@ -56,7 +56,7 @@ img { max-width: 100%; display: block; }
 }
 
 .logo img {
-    height: 45px;
+    height: 100px;
     width: auto;
     object-fit: contain;
 }
@@ -270,7 +270,7 @@ img { max-width: 100%; display: block; }
     .nav-links { display: none; }
     .hamburger { display: block; }
     
-    .logo img { height: 35px; } 
+    .logo img { height: 50px; } 
     .brand-name { font-size: 0.95rem; }
     .hero h1 { font-size: 2rem; }
     
@@ -279,5 +279,6 @@ img { max-width: 100%; display: block; }
     .c-card-item { width: 100%; }
     .footer-content { flex-direction: column; gap: 10px; }
 }
+
 
 
