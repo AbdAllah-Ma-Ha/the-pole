@@ -20,8 +20,10 @@
     <header class="header">
         <div class="container header-container">
             
-            <a href="#" class="logo">
-                <i class="fa-solid fa-snowflake"></i> القطب الشمالي
+           <a href="#" class="logo">
+                <!-- صورة اللوقو (استبدلها بصورتك الحقيقية لاحقاً) -->
+                <img src="./99.png" alt="شعار">
+                <span class="brand-name">القطب الشمالي</span>
             </a>
 
             <!-- القائمة في الكمبيوتر -->
@@ -168,62 +170,67 @@
         </div>
     </section>
 
-    <!-- 5. تواصل معنا (Layout الاحترافي) -->
+    <!-- 5. تواصل معنا (التصميم الجديد - بدون فورم) -->
     <section id="contact" class="section bg-dark">
         <div class="container">
-            <div class="contact-wrapper">
-                <!-- الجزء اليمين: المعلومات -->
-                <div class="contact-info">
-                    <h2>تواصل معنا</h2>
-                    <p>فريقنا جاهز للرد على استفساراتكم طيلة أيام الأسبوع.</p>
-                    
-                    <div class="info-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h5>العنوان</h5>
-                            <p>طرابلس، ليبيا (بالقرب من...)</p>
-                        </div>
+            <div class="section-header text-white" data-aos="fade-down">
+                <h2>تواصل معنا</h2>
+                <p style="color: #ccc;">نسعد بزيارتكم واتصالاتكم في أوقات العمل الرسمية</p>
+            </div>
+
+            <!-- كروت التواصل -->
+            <div class="contact-cards-container">
+                <!-- كرت الهاتف -->
+                <div class="c-card-item" data-aos="flip-left" data-aos-delay="100">
+                    <div class="icon-circle">
+                        <i class="fa-solid fa-phone-volume"></i>
                     </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h5>الهاتف</h5>
-                            <p dir="ltr">+218 91 000 0000</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h5>البريد الإلكتروني</h5>
-                            <p>info@the-northpole.ly</p>
-                        </div>
-                    </div>
+                    <h3>أرقام الهاتف</h3>
+                    <p dir="ltr">+218 91 000 0000</p>
+                    <p dir="ltr">+218 92 000 0000</p>
                 </div>
 
-                <!-- الجزء اليسار: الفورم (شكلي) -->
-                <div class="contact-form">
-                    <form>
+                <!-- كرت العنوان -->
+                <div class="c-card-item main-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="icon-circle">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>العنوان الرئيسي</h3>
+                    <p>ليبيا - طرابلس</p>
+                    <p>الشارع الرئيسي، بالقرب من ...</p>
+                </div>
 
-                       
-                        <input type="text" placeholder="الاسم الكامل" required>
-                        <input type="email" placeholder="البريد الإلكتروني" required>
-                        <input type="text" placeholder="رقم الهاتف">
-                        <textarea rows="4" placeholder="تفاصيل الطلب..."></textarea>
-                        <button type="submit" class="btn btn-full">إرسال الرسالة</button>
-                    
-
-                    </form>
+                <!-- كرت البريد -->
+                <div class="c-card-item" data-aos="flip-left" data-aos-delay="300">
+                    <div class="icon-circle">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@the-northpole.ly</p>
+                    <p>sales@the-northpole.ly</p>
                 </div>
             </div>
+            
+            <!-- زر واتساب عائم كبير -->
+            <div class="whatsapp-action" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://wa.me/218910000000" target="_blank" class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> تواصل معنا عبر واتساب
+                </a>
+            </div>
+
         </div>
     </section>
 
     <!-- الفوتر -->
-    <footer>
+    <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; 2024 شركة القطب الشمالي. جميع الحقوق محفوظة.</p>
+            <div class="footer-logo">
+                <i class="fa-solid fa-snowflake"></i> القطب الشمالي
+            </div>
+            <p>&copy; 2024 جميع الحقوق محفوظة لشركة القطب الشمالي.</p>
             <div class="socials">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
