@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة القطب الشمالي | استيراد المواد الكهربائية</title>
+    
+    <!-- ملف الستايل -->
+    <link rel="stylesheet" href="s.css">
+    
+    <!-- مكتبة الأيقونات (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- الخط العربي -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- الهيدر والنافبار -->
+    <header class="header">
+        <div class="container header-container">
+            
+            <a href="#" class="logo">
+                <i class="fa-solid fa-snowflake"></i> القطب الشمالي
+            </a>
+
+            <!-- القائمة في الكمبيوتر -->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#contact" class="btn-contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+
+            <!-- زر الموبايل (الهامبرغر) -->
+            <div class="hamburger" id="hamburger-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- القائمة المنزلقة للموبايل -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#hero" onclick="toggleMenu()">الرئيسية</a></li>
+            <li><a href="#about" onclick="toggleMenu()">من نحن</a></li>
+            <li><a href="#products" onclick="toggleMenu()">المنتجات</a></li>
+            <li><a href="#services" onclick="toggleMenu()">الخدمات</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">اتصل بنا</a></li>
+        </ul>
+    </div>
+
+    <!-- 1. الرئيسية (Hero) -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">تأسست سنة 2019</span>
+            <h1>شريكك الأول في <br> <span class="highlight">المواد الكهربائية</span></h1>
+            <p>نقدم أجود أنواع المعدات الكهربائية وقطع الغيار الصناعية للسوق الليبي بأعلى المواصفات العالمية.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">تصفح المنتجات</a>
+                <a href="#contact" class="btn btn-outline">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. من نحن -->
+    <section id="about" class="section">
+        <div class="container about-wrapper">
+            <div class="about-img">
+                <!-- ضع صورتك هنا في مجلد assets/images -->
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" alt="مخازن الشركة">
+            </div>
+            <div class="about-text">
+                <h4 class="sub-title">من نحن</h4>
+                <h2>الريادة في التوريد والخدمات اللوجستية</h2>
+                <p>تعتبر شركة القطب الشمالي (تأسست 2019) إحدى الشركات الرائدة في ليبيا في مجال استيراد وتوزيع المواد الكهربائية وقطع غيار المصانع.</p>
+                
+                <div class="stats-box">
+                    <div class="stat">
+                        <h3>+5</h3>
+                        <p>سنوات خبرة</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>ضمان جودة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. قسم الخدمات (Services) -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>خدماتنا</h2>
+                <p>حلول متكاملة لقطاع الأعمال والصناعة</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-ship"></i>
+                    <h3>الاستيراد والشحن</h3>
+                    <p>نؤمن لكم البضائع من المصنع مباشرة إلى مخازنكم في ليبيا.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>عقود التوريد</h3>
+                    <p>عقود طويلة الأمد لتوريد قطع الغيار للمصانع والورش.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>استشارات فنية</h3>
+                    <p>فريق هندسي جاهز لمساعدتكم في اختيار القطع المناسبة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. قسم المنتجات (Products) - الشكل الاحترافي -->
+    <section id="products" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>أحدث المنتجات</h2>
+                <p>تشكيلة واسعة من المعدات الأصلية</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- منتج 1 -->
+                <div class="product-item">
+                    <div class="p-image">
+                        <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=500&q=80" alt="منتج">
+                    </div>
+                    <div class="p-details">
+                        <span>كهرباء صناعية</span>
+                        <h3>محركات كهربائية 3 فاز</h3>
+                        <a href="#contact" class="link-btn">اطلب عرض سعر <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </div>
+
+                <!-- منتج 2 -->
+                <div class="product-item">
+                    <div class="p-image">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&q=80" alt="منتج">
+                    </div>
+                    <div class="p-details">
+                        <span>قطع غيار</span>
+                        <h3>قواطع ومفاتيح (Breakers)</h3>
+                        <a href="#contact" class="link-btn">اطلب عرض سعر <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </div>
+
+                <!-- منتج 3 -->
+                <div class="product-item">
+                    <div class="p-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1664302152996-22998a135384?w=500&q=80" alt="منتج">
+                    </div>
+                    <div class="p-details">
+                        <span>كوابل</span>
+                        <h3>كوابل نحاسية معزولة</h3>
+                        <a href="#contact" class="link-btn">اطلب عرض سعر <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. تواصل معنا (Layout الاحترافي) -->
+    <section id="contact" class="section bg-dark">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- الجزء اليمين: المعلومات -->
+                <div class="contact-info">
+                    <h2>تواصل معنا</h2>
+                    <p>فريقنا جاهز للرد على استفساراتكم طيلة أيام الأسبوع.</p>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h5>العنوان</h5>
+                            <p>طرابلس، ليبيا (بالقرب من...)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h5>الهاتف</h5>
+                            <p dir="ltr">+218 91 000 0000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h5>البريد الإلكتروني</h5>
+                            <p>info@the-northpole.ly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الجزء اليسار: الفورم (شكلي) -->
+                <div class="contact-form">
+                    <form>
+
+                       
+                        <input type="text" placeholder="الاسم الكامل" required>
+                        <input type="email" placeholder="البريد الإلكتروني" required>
+                        <input type="text" placeholder="رقم الهاتف">
+                        <textarea rows="4" placeholder="تفاصيل الطلب..."></textarea>
+                        <button type="submit" class="btn btn-full">إرسال الرسالة</button>
+                    
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 شركة القطب الشمالي. جميع الحقوق محفوظة.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ربط ملف الجافاسكريبت -->
+    <script src="script.js"></script>
+</body>
+</html>
